@@ -7,21 +7,23 @@ export default function HeroSideText() {
                 $ whoami
             </p>
 
-            <h1 className="text-5xl font-semibold text-white leading-[1.15]">
+            <h1 className="text-5xl font-semibold bg-linear-to-b from-white to-white/60 bg-clip-text 
+                text-transparent leading-[1.15]">
                 Prathamesh Dhadankar
             </h1>
 
             <p className="text-neutral-400 text-xl max-w-md">
                 Full-stack developer with{" "}
-                <span className="text-red-600 font-medium">race-weekend energy</span>.
+                <span className="bg-linear-to-b from-red-400 to-red-700 bg-clip-text 
+                text-transparent font-medium">race-weekend energy</span>.
             </p>
 
             <div className="flex items-center gap-4 mt-2">
             {[
-                { src: "/github-logo.png", alt: "GitHub" },
-                { src: "/linkedin-logo.png", alt: "LinkedIn" },
-                { src: "/x-logo.png", alt: "X" },
-                { src: "/mail-logo.png", alt: "Email" },
+                { src: "/hero/github-logo.png", alt: "GitHub" },
+                { src: "/hero/linkedin-logo.png", alt: "LinkedIn" },
+                { src: "/hero/x-logo.png", alt: "X" },
+                { src: "/hero/mail-logo.png", alt: "Email" },
             ].map((icon) => (
                 <a
                 key={icon.alt}
@@ -36,8 +38,8 @@ export default function HeroSideText() {
                 "
                 >
                 <Image
-                    width={20}
-                    height={20}
+                    width={22}
+                    height={22}
                     src={icon.src}
                     alt={icon.alt}
                     className="opacity-80 hover:opacity-100 transition"

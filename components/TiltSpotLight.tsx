@@ -2,7 +2,8 @@ import { Tilt } from "@/components/ui/tilt";
 
 function TiltSpotlight() {
   return (
-    <div className="relative max-w-sm aspect-4/5 bg-neutral-900/40 outline-dotted outline-neutral-700 rounded-2xl p-2">
+    <div className="relative max-w-sm aspect-4/5 bg-neutral-900/40 
+    outline-dotted outline-neutral-700 rounded-2xl p-2">
       <Tilt
         rotationFactor={8}
         springOptions={{
@@ -13,7 +14,7 @@ function TiltSpotlight() {
         className="relative rounded-xl"
       >
         <img
-          src="/profile.jpg"
+          src="/hero/profile.jpg"
           alt="Pratham"
           className="
             w-full h-96
