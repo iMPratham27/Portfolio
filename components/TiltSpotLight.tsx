@@ -1,4 +1,5 @@
 import { Tilt } from "@/components/ui/tilt";
+import Image from "next/image";
 
 function TiltSpotlight() {
   return (
@@ -13,9 +14,11 @@ function TiltSpotlight() {
         }}
         className="relative rounded-xl"
       >
-        <img
+        <Image
           src="/hero/profile.jpg"
           alt="Pratham"
+          width={400}
+          height={600}
           className="
             w-full h-96
             object-cover rounded-xl

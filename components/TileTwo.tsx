@@ -9,11 +9,11 @@ export default function TileTwo() {
       <div
         className="pointer-events-none bg-linear-to-b from-white to-white/30
           bg-clip-text text-transparent text-center text-6xl font-semibold leading-none tracking-tight ">
-        Based in India
+        Remotely Available
       </div>
 
       {/* Globe */}
-      <Globe className="top-24" />
+      <Globe className="top-16" />
 
       {/* Bottom vignette(Gray Film) */}
       <div

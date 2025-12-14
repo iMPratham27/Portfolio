@@ -7,7 +7,7 @@ export default function TileFour() {
       <div
         className=" pointer-events-none bg-linear-to-b from-white to-white/40 bg-clip-text 
         text-transparent text-start text-xl font-semibold leading-none tracking-tight mt-2">
-        Github Contributions
+        Github Activity
       </div>
 
       {/* Contribution graph */}
