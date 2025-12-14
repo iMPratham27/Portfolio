@@ -1,3 +1,4 @@
+import { socials } from "@/config/socials";
 import Image from "next/image";
 
 export default function HeroSideText() {
@@ -20,14 +21,15 @@ export default function HeroSideText() {
 
             <div className="flex items-center gap-4 mt-2">
             {[
-                { src: "/hero/github-logo.png", alt: "GitHub" },
-                { src: "/hero/linkedin-logo.png", alt: "LinkedIn" },
-                { src: "/hero/x-logo.png", alt: "X" },
-                { src: "/hero/mail-logo.png", alt: "Email" },
+                { src: "/hero/github-logo.png", alt: "GitHub", url: `${socials.github}` },
+                { src: "/hero/linkedin-logo.png", alt: "LinkedIn", url: `${socials.linkedin}` },
+                { src: "/hero/x-logo.png", alt: "X", url: `${socials.x}` },
+                { src: "/hero/mail-logo.png", alt: "Email", url: `${socials.email}` },
             ].map((icon) => (
                 <a
                 key={icon.alt}
-                href="#"
+                href={icon.url}
+                target="_blank"
                 className="
                     p-2 rounded-full
                     border border-neutral-800

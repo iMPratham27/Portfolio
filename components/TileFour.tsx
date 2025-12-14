@@ -13,7 +13,7 @@ export default function TileFour() {
       {/* Contribution graph */}
       <img
         src="https://ghchart.rshah.org/08872B/iMPratham27"
-        alt="GitHub contribution graph"
+        alt="GitHub activity graph"
         className=" w-full h-full object-contain opacity-90"
       />
 
