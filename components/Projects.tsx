@@ -3,12 +3,15 @@ import Link from "next/link";
 
 export default function Projects() {
   return (
-    <div className="px-1 py-2 border-b border-neutral-800">
+    <div className="px-1 sm:px-2 py-2 border-b border-neutral-800">
       
-      <div className="flex items-center justify-between m-3">
+      <div
+        className="flex items-center justify-between m-2"
+      >
+
         <h2
           className="pointer-events-none bg-linear-to-b from-white to-white/40 bg-clip-text
-            text-transparent text-4xl font-semibold tracking-tight"
+            text-transparent text-3xl sm:text-4xl font-semibold tracking-tight"
         >
           Projects
         </h2>
@@ -28,7 +31,10 @@ export default function Projects() {
 
 
       {/* Projects grid */}
-      <div className="grid grid-cols-2 gap-3">
+      <div
+        className=" grid gap-3 grid-cols-1 sm:grid-cols-2"
+      >
+
         <HomeProjectCard
           image="/projects/SmartDB.png"
           title="SmartDB"

@@ -3,17 +3,18 @@ import { Globe } from "@/components/ui/globe";
 export default function TileTwo() {
   return (
     <div
-      className="bg-neutral-900/30 relative h-120 w-full flex-1 items-center justify-center
-        overflow-hidden rounded border border-neutral-800 pt-10 pb-40 ">
-      
+       className="bg-neutral-900/30 relative h-120 w-full flex-1 items-center justify-center
+         overflow-hidden rounded border border-neutral-800 pt-10 pb-40 "
+    >
+  
       <div
-        className="pointer-events-none bg-linear-to-b from-white to-white/30
-          bg-clip-text text-transparent text-center text-6xl font-semibold leading-none tracking-tight ">
-        Remotely Available
+         className="pointer-events-none bg-linear-to-b from-white to-white/30
+           bg-clip-text text-transparent text-center text-5xl md:text-6xl font-semibold leading-none tracking-tight ">
+         Remotely Available
       </div>
 
       {/* Globe */}
-      <Globe className="top-16" />
+      <Globe className="top-35 sm:top-16 scale-95 sm:scale-100" />
 
       {/* Bottom vignette(Gray Film) */}
       <div

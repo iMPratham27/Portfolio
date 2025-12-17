@@ -14,22 +14,25 @@ interface ProjectCardProps {
 export function HomeProjectCard({image, title, description, tech, href="#"}: ProjectCardProps) {
   return (
     <div
-      className=" group rounded-xl border border-neutral-800 cursor-pointer
-        bg-neutral-950 p-2  hover:border-neutral-700 transition translate-0
+      className=" group rounded border border-neutral-800 cursor-pointer
+        bg-neutral-950 p-2 hover:border-neutral-700 transition translate-0
     ">
       
-      <div className="relative h-72 w-full overflow-hidden rounded-lg">
+      <div
+        className=" not-only:relative h-60 sm:h-72 w-full overflow-hidden rounded-sm"
+      >
+
         <Image
           src={image}
           alt={`${title} project preview`}
           fill
           className="object-cover object-top transition-transform 
-          duration-500 group-hover:scale-[1.03]"
+          duration-500 sm:group-hover:scale-[1.03]"
         />
       </div>
 
-      <div className="p-4 space-y-2">
-        <h3 className="text-2xl text-neutral-300 font-semibold tracking-tight">
+      <div className="p-1 sm:p-2 space-y-2">
+        <h3 className="text-xl md:text-2xl text-neutral-300 font-semibold tracking-tight">
           {title}
         </h3>
 

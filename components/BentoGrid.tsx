@@ -4,24 +4,20 @@ import TileThree from "./TileThree";
 import TileTwo from "./TileTwo";
 
 export default function BentoGrid() {
-    return (
-        <>
-            <div className="border-y border-neutral-800 p-1">
-                <div className="flex flex-col gap-1">
-                    
-                    <div className="flex gap-1">
-                        <TileOne />
-                        <TileTwo />
-                    </div>
-
-                    <div className="flex gap-1">
-                        <TileThree />
-                        <TileFour />
-                    </div>
-
-                </div>
-            </div>
-
-        </>
-    );
+  return (
+    <div className="border-y border-neutral-800 py-2 px-1">
+      <div
+        className="
+          grid gap-1
+          grid-cols-1
+          md:grid-cols-2
+        "
+      >
+        <TileOne />
+        <TileTwo />
+        <TileThree />
+        <TileFour />
+      </div>
+    </div>
+  );
 }
